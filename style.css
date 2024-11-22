@@ -1,0 +1,125 @@
+body {
+    background-color: #121212;
+    color: #f8f9fa;
+}
+.bg-dark, .navbar-dark .navbar-nav .nav-link, .btn-primary, .modal-content, .list-group-item {
+    background-color: #212529 !important;
+    color: #f8f9fa !important;
+}
+.text-muted {
+    color: #b0bec5 !important;
+}
+a {
+    color: #82b1ff;
+}
+a:hover {
+    color: #448aff;
+}
+.btn-primary {
+    border-color: #1a73e8;
+}
+.btn-close {
+    filter: invert(1);
+}
+iframe {
+    border: 1px solid #444;
+}
+.animate-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.animate-btn:hover {
+    transform: scale(1.1); /* Enlarge the button slightly on hover */
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4); /* Add a glowing effect */
+}
+
+    /* Button pulsing effect */
+.animate-btn:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 123, 255, 0.2);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite;
+    z-index: -1; /* Ensures it appears behind the button */
+}
+
+@keyframes pulse {
+    0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    }
+    100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+    }
+}
+
+/* about */
+/* About Section Styling */
+#about {
+    background-color: #121212; /* Dark background for contrast */
+    color: white; /* Text color */
+}
+
+#about h2 {
+    font-size: 3rem; /* Larger font size for the heading */
+    font-weight: 700; /* Bold heading */
+    color: #f8f9fa; /* Light color for the heading */
+}
+
+#about p {
+    font-size: 1.125rem; /* Medium text size for description */
+    line-height: 1.6; /* Improve readability */
+    color: #dcdcdc; /* Slightly lighter text color */
+}
+
+#about ul {
+    list-style: none; /* Remove default list style */
+    padding-left: 0; /* Remove indentation */
+}
+
+#about li {
+    font-size: 1rem; /* Standard text size for list items */
+    color: #b0bec5; /* Subtle color for list items */
+}
+
+#about li i {
+    color: #28a745; /* Green color for check-circle icons */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+#about .btn-primary {
+    background-color: #1a73e8; /* Button color */
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px; /* Rounded button */
+    transition: background-color 0.3s ease;
+}
+
+#about .btn-primary:hover {
+    background-color: #155ab3; /* Darker button color on hover */
+}
+
+/* Image styling */
+#about img {
+    max-width: 100%; /* Ensure image is responsive */
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect for image */
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    #about h2 {
+        font-size: 2.5rem; /* Adjust font size on small screens */
+    }
+
+    #about p {
+        font-size: 1rem; /* Smaller text on mobile */
+    }
+}
